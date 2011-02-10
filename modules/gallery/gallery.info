@@ -1,0 +1,8 @@
+; $Id: gallery.info,v 1.1.2.1 2006/10/02 11:11:20 kiz0987 Exp $
+name = Gallery 
+description = Embeds Gallery2 into Drupal. 
+
+; Information added by drupal.org packaging script on 2007-04-24
+version = "5.x-1.0"
+project = "gallery"
+

@@ -1,0 +1,77 @@
+<?php
+// $Id: gallery.install,v 1.1.2.1 2007/02/16 22:14:11 profix898 Exp $
+
+/**
+ * gallery.module : gallery.install
+ * Install/Uninstall functions
+ */
+ 
+/**
+ * Implementation of hook_uninstall
+ */
+function gallery_uninstall() { 
+  /* Gallery Main Variables */
+  variable_del('gallery_valid'); 
+  variable_del('gallery_uri'); 
+  variable_del('gallery_autodetect_dir'); 
+  variable_del('gallery_dir'); 
+  variable_del('gallery_embed_uri'); 
+  variable_del('gallery_use_full_name'); 
+  variable_del('gallery_profile_full_name_field'); 
+  variable_del('gallery_error_mode'); 
+  /* Gallery Block Variables */
+  variable_del('gallery_block_num_images'); 
+  variable_del('gallery_block_block');  
+  variable_del('gallery_item_id'); 
+  variable_del('gallery_block_show');  
+  variable_del('gallery_maxsize'); 
+  variable_del('gallery_album_frame'); 
+  variable_del('gallery_item_frame'); 
+  variable_del('gallery_link_target'); 
+  /* Gallery Grid Block Variables */
+  variable_del('gallery_grid_num_cols'); 
+  variable_del('gallery_grid_num_rows'); 
+  variable_del('gallery_grid_block_block'); 
+  variable_del('gallery_grid_item_id'); 
+  variable_del('gallery_grid_block_show'); 
+  variable_del('gallery_grid_maxsize'); 
+  variable_del('gallery_grid_album_frame'); 
+  variable_del('gallery_grid_item_frame'); 
+  variable_del('gallery_grid_link_target'); 
+  /* Gallery Filter Variables */
+  variable_del('gallery_filter_prefix'); 
+  variable_del('gallery_filter_default_block_type'); 
+  variable_del('gallery_filter_can_cache'); 
+  variable_del('gallery_filter_n_images'); 
+  variable_del('gallery_filter_default_show'); 
+  variable_del('gallery_filter_default_size'); 
+  variable_del('gallery_filter_default_album_frame'); 
+  variable_del('gallery_filter_default_item_frame'); 
+  variable_del('gallery_filter_default_link_target'); 
+  variable_del('gallery_filter_default_div_class'); 
+  /* Gallery Search Variables */
+  variable_del('gallery_search_max_items'); 
+  variable_del('gallery_search_num_per_row'); 
+  variable_del('gallery_search_max_rows_per_pager'); 
+  variable_del('gallery_search_show_thumbs'); 
+  variable_del('gallery_search_block_show'); 
+  variable_del('gallery_search_maxsize'); 
+  variable_del('gallery_search_album_frame'); 
+  variable_del('gallery_search_item_frame'); 
+  variable_del('gallery_search_link_target');
+  /* G2Image Variables */
+  variable_del('gallery_g2image_mode'); 
+  variable_del('gallery_g2image_only_listed_pages'); 
+  variable_del('gallery_g2image_std_pages'); 
+  variable_del('gallery_g2image_regex'); 
+  variable_del('gallery_g2image_sortby'); 
+  variable_del('gallery_g2image_images_per_page'); 
+  variable_del('gallery_g2image_display_filenames'); 
+  variable_del('gallery_g2image_click_mode'); 
+  variable_del('gallery_g2image_click_mode_variable'); 
+  variable_del('gallery_g2image_default_action'); 
+  variable_del('gallery_g2image_custom_url'); 
+  variable_del('gallery_g2image_custom_class'); 
+  variable_del('gallery_g2image_default_alignment'); 
+  variable_del('gallery_g2image_class_mode');   
+}
